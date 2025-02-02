@@ -3,7 +3,7 @@
 ## commands
 
 ```bash
-nmap <IP>
+nmap <targetIP>
 ```
 Basic scan
 
