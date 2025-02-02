@@ -5,12 +5,12 @@
 - Shoutout to the eJPT and hackersploit going through the commands for/with me. I wouldn't have had the patience to do it all myself aha
 
 ## tips & tricks
-- scripts are stored in /usr/share/nmap/scripts
+- scripts are stored in `/usr/share/nmap/scripts`
 - use `ls | grep "<string>"` to find the script you are looking for
 - use `cat <script.nse> | grep "<string>"` to find arguments that need to be changed during nmap command phase
 - Some scripts have special arguments you need to specify before proceeding, ensure you add these during the nmap command phase
 - Change timing and tick rates are loud, only do these if you want to be caught
-- nmap tac flag -Pn 
+- `nmap -Pn` for windows specific scanning
 
 ## commands
 
