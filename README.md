@@ -93,6 +93,11 @@ Basic script search, equivalent of: --script=default
 Typically presents more infomration than usual
 
 ```bash
+nmap -sU <targetIP>
+```
+UDP Scan
+
+```bash
 nmap -v <targetIP>
 ```
 Verbose scan, presents information readily
