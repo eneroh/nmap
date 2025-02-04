@@ -20,6 +20,12 @@ nmap <targetIP>
 Basic scan
 
 ```bash
+nmap -p <port> <targetIP>
+nmap -p- <targetIP>
+```
+Port specific scan
+
+```bash
 nmap <targetIP> -o <file>
 -oN
 -oX
@@ -38,6 +44,7 @@ script kiddie format
 Greppable format
 <br>
 Output in 3 major formats
+
 ```bash
 nmap <targetIP> > <file>
 cat <file> | grep ".lan" | awk '{print $5,$6}'
@@ -47,7 +54,7 @@ Perform scan, outputs to file, grep for unique and found materials, column speci
 ```bash
 nmap -sn <targetIPrange/CIDR>
 ```
-Targets specific IP addresses (linux specific)
+Ping scan, scan host discovery (linux specific)
 
 ```bash
 nmap -sP <targetIPrange/CIDR>
