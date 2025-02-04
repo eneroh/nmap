@@ -65,8 +65,11 @@ nmap -sV <targetIP>
 Versioning, also contains operating system information
 
 ```bash
-nmap sC <targetIP>
+nmap -sC <targetIP>
 ```
+Basic script search, equivalent of: --script=default
+<br>
+Typically presents more infomration than usual
 
 ```bash
 nmap -v <targetIP>
