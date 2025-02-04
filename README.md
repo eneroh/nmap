@@ -21,9 +21,23 @@ Basic scan
 
 ```bash
 nmap <targetIP> -o <file>
+-oN
+-oX
+-oS
+-oG
+-oA
 ```
 Output results to file
-
+<br>
+Normal format
+<br>
+XML format
+<br>
+script kiddie format
+<br>
+Greppable format
+<br>
+Output in 3 major formats
 ```bash
 nmap <targetIP> > <file>
 cat <file> | grep ".lan" | awk '{print $5,$6}'
