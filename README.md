@@ -78,7 +78,7 @@ Real life pen testing, be quiet and sneakier
 ```bash
 nmap -sS <targetIP>
 ```
-Sneaky scan
+TCP Syn scan, sneaky scan
 
 ```bash
 nmap -sV <targetIP>
