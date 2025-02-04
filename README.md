@@ -20,6 +20,17 @@ nmap <targetIP>
 Basic scan
 
 ```bash
+nmap <targetIP> -o <file>
+```
+Output results to file
+
+```bash
+nmap <targetIP> > <file>
+cat <file> | grep ".lan" | awk '{print $5,$6}'
+```
+Perform scan, outputs to file, grep for unique and found materials, column specific filtering
+
+```bash
 nmap -sn <targetIPrange/CIDR>
 ```
 Targets specific IP addresses (linux specific)
@@ -28,6 +39,44 @@ Targets specific IP addresses (linux specific)
 nmap -sP <targetIPrange/CIDR>
 ```
 Scans and provides mac address, vendor and hostname information for devices on network (windows and linux)
+
+```bash
+nmap -O <targetIP>
+```
+Present Operating system information
+
+```bash
+nmap -T<1,2,3,4,5>
+```
+Increasing scan timing speed (1=sneaky, 5=insane)
+<br>
+Can go T4 or T5 in the OSCP
+<br>
+Real life pen testing, be quiet and sneakier
+
+```bash
+nmap -sS <targetIP>
+```
+Sneaky scan
+
+```bash
+nmap -sV <targetIP>
+```
+Versioning, also contains operating system information
+
+```bash
+nmap sC <targetIP>
+```
+
+```bash
+nmap -v <targetIP>
+```
+Verbose scan, presents information readily
+
+```bash
+nmap -vvv <targetIP>
+```
+Very verbose scan, presents information constantly
 
 ```bash
 nmap -Pn
