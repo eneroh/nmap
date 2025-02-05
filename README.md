@@ -67,7 +67,7 @@ nmap -O <targetIP>
 Present Operating system information
 
 ```bash
-nmap -T<1,2,3,4,5>
+nmap -T<1,2,3,4,5> <targetIP>
 ```
 Increasing scan timing speed (1=sneaky, 5=insane)
 <br>
@@ -108,7 +108,7 @@ nmap -vvv <targetIP>
 Very verbose scan, presents information constantly
 
 ```bash
-nmap -Pn
+nmap -Pn <targetIP>
 ```
 Required for windows hosts, treat all hosts as online (skips host discovery)
 
@@ -118,7 +118,7 @@ nmap --script <script.nse> <target>
 Calling a script onto a target
 
 ```bash
-nmap --script <script.nse> --script-args <n1=v1,[n2=v2]>
+nmap --script <script.nse> --script-args <n1=v1,[n2=v2]> <target>
 ```
 Provide arguments to scripts
 
